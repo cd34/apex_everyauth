@@ -43,6 +43,7 @@ Contents:
 
    INSTALL
    providers/facebook
+   providers/google
    providers/twitter
    wishlist
 

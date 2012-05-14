@@ -27,9 +27,10 @@ conf.js:
 
   module.exports = {
     fb: {
-        appId: '210641172362705',
-        appSecret: '5f10b959f51913c5d549c35981dbeb63'
+        appId: 'xxxxxxxxxxxxxxx',
+        appSecret: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     }
+  ]
 
 In your app:
 

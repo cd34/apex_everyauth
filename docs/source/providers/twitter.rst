@@ -21,11 +21,12 @@ conf.js:
 
 ::
 
-  module.exports = {
+  module.exports = [
     twit: {
         consumerKey: 'consumer key',
         consumerSecret: 'consumer secret'
     }
+  ]
 
 In your app:
 
