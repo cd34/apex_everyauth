@@ -15,6 +15,26 @@ application required similar functionality between both servers.
 
 Authentication wrappers around Everyauth
 
+**Requirements**
+
+  * Node.js >= 18.0.0
+  * Sequelize 6.x
+  * bcrypt 5.x
+
+**Usage**
+
+.. code-block:: javascript
+
+   const { Sequelize } = require('sequelize');
+   const initModels = require('apex_everyauth');
+
+   const sequelize = new Sequelize('database', 'username', 'password', {
+     host: 'localhost',
+     dialect: 'mysql',
+   });
+
+   const models = initModels(sequelize);
+
 **Authentication**
 
   * Local authentication uses salt + BCrypt
@@ -35,4 +55,4 @@ Everyauth_ is used for OpenID/OpenAuth providers and supports:
 
 .. _Pyramid: http://www.pylonsproject.org/
 .. _Everyauth: https://github.com/bnoguchi/everyauth
-.. _Bcrypt: https://github.com/ncb000gt/node.bcrypt.js
+.. _Bcrypt: https://github.com/kelektiv/node.bcrypt.js
